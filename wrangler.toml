@@ -2,10 +2,16 @@ name = "imgbed"
 compatibility_date = "2024-04-01"
 pages_build_output_dir = "./"
 
+# 绑定两个变量名到同一个 KV 空间，确保代码能读到
 [[kv_namespaces]]
 binding = "img_kv"
-id = "0eaef16acbeb432d8a132110d8e07ec1" # 在 KV 页面复制那串长 ID
+id = "0eaef16acbeb432d8a132110d8e07ec1"
 
+[[kv_namespaces]]
+binding = "img_url"
+id = "0eaef16acbeb432d8a132110d8e07ec1"
+
+# R2 绑定
 [[r2_buckets]]
 binding = "img_r2"
-bucket_name = "img-r2-bucket" 
+bucket_name = "img-r2-bucket"
